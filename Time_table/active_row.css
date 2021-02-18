@@ -1,0 +1,46 @@
+table
+{
+  width: 400px;
+  font-size: 25px;
+  width: 100%;
+}
+
+th
+{
+background-color: #009879;
+color: #ffffff;
+text-align: left;
+font-weight: bold;
+font-size: Large;
+}
+
+.time_table {
+border-collapse: collapse;
+min-width: 400px;
+border-radius: 10px 10px 0 0;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th,td,caption
+{
+  text-align: center;
+}
+
+table, th, td
+{
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.time_table th,
+.time_table td {
+  padding: 12px 15px;
+}
+
+#active_row
+{
+  font-weight: bold;
+  color: #009879;
+  background-color: #c5d4cc;
+}

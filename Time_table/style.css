@@ -1,0 +1,22 @@
+table
+{
+  width: 400px;
+}
+
+th,td,caption
+{
+  text-align: center;
+}
+
+table, th, td
+{
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.active_row
+{
+  font-weight: bold;
+  color: #009879;
+  background-color: ##f28a1d;
+}

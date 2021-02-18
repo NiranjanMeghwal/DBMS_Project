@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tables</title>
+  </head>
+
+  <style>
+    table
+    {
+      width: 400px;
+      font-size: 25px;
+      width: 100%;
+    }
+
+    th
+    {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    font-size: Large;
+    }
+
+    .time_table {
+    border-collapse: collapse;
+    min-width: 400px;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    th,td,caption
+    {
+      text-align: center;
+    }
+
+    table, th, td
+    {
+      border: 1px solid;
+      border-collapse: collapse;
+    }
+
+    .time_table th,
+    .time_table td {
+      padding: 12px 15px;
+    }
+
+  </style>
+
+  <body>
+    <table class="time_table">
+      <tr>                  <!-- table row -->
+        <th>Time / Day</th>       <!-- table head-->
+        <th id="9">9:00 am - 9:45 am</th>
+        <th id="10">10:00 am - 10:45 am</th>
+        <th id="11">11:00 am - 11:45 am</th>
+        <th id="12">12:00 pm - 12:45 pm</th>
+      </tr>
+      <tr>
+        <td id="1">Monday</td>       <!-- table cell -->
+        <td>CS210</td>
+        <td>MA201</td>
+        <td>CS211</td>
+        <td>CS204</td>
+      </tr>
+      <tr>
+        <td id="2">Tuesday</td>
+        <td>CS211</td>
+        <td>HS205</td>
+        <td>CS209</td>
+        <td>CS210</td>
+      </tr>
+      <tr>
+        <td id="3">Wednesday</td>
+        <td>CS204</td>
+        <td>CS211</td>
+        <td>HS205</td>
+        <td>MA201</td>
+      </tr>
+      <tr>
+        <td id="4">Thrusday</td>
+        <td>CS209</td>
+        <td>CS204</td>
+        <td>CS210</td>
+        <td>HS205</td>
+      </tr>
+      <tr>
+        <td id="5">Friday</td>
+        <td>CS210</td>
+        <td>MA201</td>
+        <td>CS204</td>
+        <td>CS209</td>
+      </tr>
+      <tr>
+        <td id="6">Saturday</td>
+        <td>CS211</td>
+        <td>CS210</td>
+        <td>CS209</td>
+        <td>MA201</td>
+      </tr>
+      <tr>
+        <td id="0">Sunday</td>
+        <td colspan="4">HOLIDAY</td>
+      </tr>
+    </table>
+  </body>
+
+  <script>
+    var d = new Date();
+    var y = d.getDay();
+    var z = d.getHours()
+    document.getElementById(y).style.color = "#009879";
+    document.getElementById(y).style.backgroundColor = "#c5d4cc";
+    document.getElementById(z).style.color = '#009879';
+    document.getElementById(z).style.backgroundColor = '#c5d4cc';
+    /* try for loop */
+  </script>
+</html>
